@@ -9,7 +9,6 @@ describe('average_uneven', function() {
   it('1-10的奇数算平均数', function() {
 
     var result = average_uneven(collection);
-
     expect(result).toEqual(5);
   })
 });
