@@ -19,17 +19,5 @@ function count_same_elements(collection) {
 }
 
 
-var collection = [
-    "a", "a", "a",
-    "e", "e", "e", "e", "e", "e", "e",
-    "h", "h", "h", "h", "h", "h", "h", "h", "h", "h", "h",
-    "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t", "t",
-    "f", "f", "f", "f", "f", "f", "f", "f", "f",
-    "c", "c", "c", "c", "c", "c", "c", "c",
-    "g", "g", "g", "g", "g", "g", "g",
-    "b", "b", "b", "b", "b", "b",
-    "d-5"
-];
-var result = count_same_elements(collection);
-console.log(result);
+
 module.exports = count_same_elements;
