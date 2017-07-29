@@ -1,7 +1,6 @@
 function count_same_elements(collection) {
-  //在这里写入代码
     var objArr = [];
-    var reg = /\[|\]|-|:/g;
+    var reg = /[\[\]\-:]/g;
     collection.map(function (elem) {
         for (var i = 0; i < objArr.length; i++) {
             if (elem.replace(reg, ",").split(",")[0] == objArr[i].name) {

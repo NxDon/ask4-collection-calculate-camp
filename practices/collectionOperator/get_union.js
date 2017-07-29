@@ -10,7 +10,6 @@ function get_union(collection_a, collection_b) {
     var s = new Set();
     tempArr.forEach((elem) => s.add(elem));
     return Array.from(s);
-
 }
 
 module.exports = get_union;

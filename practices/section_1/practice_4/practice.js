@@ -3,7 +3,7 @@ function collect_same_elements(collection_a, object_b) {
         return elem.key;
     })
     var arrB = object_b.value;
-    return arrA.filter((elem,index,array) => {
+    return arrA.filter((elem) => {
         return arrB.indexOf(elem) >= 0;
     })
 }

@@ -1,20 +1,20 @@
 'use strict';
-var even_asc_odd_desc = function(collection){
-    var oddArr = [],
+let even_asc_odd_desc = function (collection) {
+    let oddArr = [],
         evenArr = [];
     collection.forEach((elem) => {
-        if(elem % 2 === 0){//even
+        if (elem % 2 === 0) {//even
             evenArr.push(elem);
-        }else{
+        } else {
             oddArr.push(elem);
         }
-    })
-    evenArr.sort((a,b) => {
+    });
+    evenArr.sort((a, b) => {
         return a - b;
-    })
-    oddArr.sort((a,b) => {
+    });
+    oddArr.sort((a, b) => {
         return b - a;
-    })
+    });
     return evenArr.concat(oddArr)
 
 };

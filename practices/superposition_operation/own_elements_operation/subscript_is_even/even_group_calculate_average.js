@@ -1,18 +1,18 @@
 'use strict';
-var even_group_calculate_average = function(collection){
+var even_group_calculate_average = function (collection) {
     var result = [];
-    var evenArr = collection.filter((elem,index) => {
+    var evenArr = collection.filter((elem, index) => {
         return index % 2 !== 0 && elem % 2 == 0;//index是偶数且这个元素也是偶数
-    })
-    if(evenArr.length === 0) {
+    });
+    if (evenArr.length === 0) {
         return [0];
-    }else{
+    } else {
         var arr1 = [],
             arr2 = [],
             arr3 = [];
-        var arrList = [arr1,arr2,arr3];
+        var arrList = [arr1, arr2, arr3];
         evenArr.forEach((elem) => {
-            switch (getNumberDigit(elem)){
+            switch (getNumberDigit(elem)) {
                 case 1:
                     arr1.push(elem);
                     break;
@@ -25,17 +25,17 @@ var even_group_calculate_average = function(collection){
             }
         });
         arrList.forEach((elem) => {
-            if(elem.length > 0){//非空数组
+            if (elem.length > 0) {//非空数组
                 result.push(calculate_average(elem));
             }
-        })
+        });
         return result;
     }
 };
 
-var calculate_average = function(collection){
+var calculate_average = function (collection) {
     //先过滤数组，然后reduce求和，然后除以length
-    return collection.reduce((a,b) => {
+    return collection.reduce((a, b) => {
             return a + b;
         }) / collection.length;
 };

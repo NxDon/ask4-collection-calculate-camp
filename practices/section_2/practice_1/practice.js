@@ -9,12 +9,12 @@ function count_same_elements(collection) {
                 return;
             }
         }
-        //not in current objArr
+        //不在当前 objArr
         objArr[objArr.length] = {
             key: elem.replace(reg, ",").split(",")[0],
             count: elem.replace(reg, ",").split(",")[1] ? parseInt(elem.replace(reg, ",").split(",")[1]) : 1
         }
-    })
+    });
     return objArr;
 }
 

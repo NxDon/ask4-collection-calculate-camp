@@ -5,7 +5,9 @@ function average_uneven(collection) {
     var oddArr = collection.filter((elem) => {
         return elem % 2 !== 0;
     })
-    return oddArr.reduce((a,b) => {return a + b}) / oddArr.length;
+    return oddArr.reduce((a, b) => {
+            return a + b
+        }) / oddArr.length;
 }
 
 
